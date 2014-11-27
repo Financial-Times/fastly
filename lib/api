@@ -474,7 +474,7 @@ module.exports = [
     {
         method: 'GET',
         type: 'service',
-        fn: '',
+        fn: 'getServices',
         url: '/service',
         
     },
@@ -539,14 +539,12 @@ module.exports = [
         type: 'settings',
         fn: '',
         url: '/service/%service_id/version/%version/settings',
-        
     },
     {
         method: 'GET',
         type: 'stats',
-        fn: '',
-        url: '/service/%service/stats/summary',
-        
+        fn: 'stats',
+        url: '/stats/service/%service_id',
     },
     {
         method: 'GET',
@@ -684,7 +682,7 @@ module.exports = [
     {
         method: 'POST',
         type: 'version',
-        fn: '',
+        fn: 'createVersion',
         url: '/service/%service_id/version',
         
     },
@@ -705,7 +703,7 @@ module.exports = [
     {
         method: 'PUT',
         type: 'version',
-        fn: 'activateVcl',
+        fn: 'activateVersion',
         url: '/service/%service_id/version/%number/activate',
         
     },
@@ -719,14 +717,14 @@ module.exports = [
     {
         method: 'PUT',
         type: 'version',
-        fn: 'cloneVcl',
+        fn: 'cloneVersion',
         url: '/service/%service_id/version/%number/clone',
         
     },
     {
         method: 'GET',
         type: 'version',
-        fn: 'validateVcl',
+        fn: 'validateVersion',
         url: '/service/%service_id/version/%number/validate',
         
     },
