@@ -12,7 +12,7 @@ module.exports = [
     {
         method: 'POST',
         type: 'backend',
-        fn: 'updateBackend',
+        fn: 'createBackend',
         url: '/service/%service_id/version/%version/backend',
         
     },
@@ -33,7 +33,7 @@ module.exports = [
     {
         method: 'PUT',
         type: 'backend',
-        fn: 'createBackend',
+        fn: 'updateBackend',
         url: '/service/%service_id/version/%version/backend/%old_name',
         
     },
