@@ -10,7 +10,7 @@ This repo is a fork of the one currently installed in NPM, so you'll need to to 
 npm install https://github.com/commuterjoy/fastly/archive/v2.3.0.tar.gz
 ```
 
-### Basic Use
+### Usage 
 
 A simple use of the API looks like this,
 

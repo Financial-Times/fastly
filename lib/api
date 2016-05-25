@@ -539,14 +539,12 @@ module.exports = [
         type: 'settings',
         fn: '',
         url: '/service/%service_id/version/%version/settings',
-        
     },
     {
         method: 'GET',
         type: 'stats',
-        fn: '',
-        url: '/service/%service/stats/summary',
-        
+        fn: 'stats',
+        url: '/stats/service/%service_id',
     },
     {
         method: 'GET',
