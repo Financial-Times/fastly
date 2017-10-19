@@ -5,7 +5,7 @@ lint:
 	jshint ./lib/*.js
 
 unit:
-	tap ./test/unit/*.js --stderr
+	tap ./test/unit/*.js
 
 test:lint unit
 
