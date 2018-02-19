@@ -9,6 +9,7 @@ test('unit', function (t) {
 
     t.type(ready, 'object', 'module exposes an object');
     t.type(ready.request, 'function', 'request method exists');
+    t.type(ready.softPurgeKey, 'function', 'softPurgeKey method exists');
 
     methods.forEach(m => {
         t.type(ready[m], 'function', `${m} method exists`);
